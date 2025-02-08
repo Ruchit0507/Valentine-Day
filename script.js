@@ -18,7 +18,7 @@ let promptMessages = [
     "This is the last warning! 🚨",
     "No more No's! 😡",
     "I'm serious! Click Yes now! 🤨",
-    "Okay, you have no choice now! 😏".replace,
+    "Okay, you have no choice now! 😏",
     "Do you really want to break my heart? 💔",
 "My heart is on the line here… 💘",
 "I can't sleep until you say Yes! 😭",
