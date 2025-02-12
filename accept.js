@@ -1,4 +1,3 @@
-// Predefined love notes
 let loveNotes = [
     "You make my world brighter! ✨",
     "You are the peanut butter to my jelly! 🥪",
@@ -55,7 +54,6 @@ let loveNotes = [
     "You are the reason I believe in love! 💞"
 ];
 
-// Function to pick a random love note
 function pickLoveNote() {
     let randomIndex = Math.floor(Math.random() * loveNotes.length);
     let noteText = loveNotes[randomIndex];
@@ -63,14 +61,9 @@ function pickLoveNote() {
     let noteContainer = document.getElementById("note-container");
     noteContainer.innerHTML = `<p>${noteText}</p>`;
 
-    // Play soft background music
-    playMusic();
-
-    // Trigger falling hearts animation
     createFallingHearts();
 }
 
-// Function to add a custom love note
 function addLoveNote() {
     let newNote = document.getElementById("newNote").value;
     if (newNote.trim() !== "") {
@@ -79,8 +72,6 @@ function addLoveNote() {
         alert("Love note added! 💖");
     }
 }
-
-// Function to create falling hearts animation
 function createFallingHearts() {
     for (let i = 0; i < 10; i++) {
         let heart = document.createElement("div");
@@ -91,16 +82,9 @@ function createFallingHearts() {
 
         document.body.appendChild(heart);
 
-        // Remove heart after animation ends
         setTimeout(() => {
             heart.remove();
         }, 3000);
     }
 }
 
-// Function to play soft background music
-function playMusic() {
-    let music = document.getElementById("bg-music");
-    music.volume = 0.4; // Soft volume
-    music.play();
-}
